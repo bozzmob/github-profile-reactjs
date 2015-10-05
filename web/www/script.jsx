@@ -12,7 +12,8 @@ var Card = React.createClass({
     return (
       <div>
         <img src={this.state.avatar_url} width="80" />
-        <h3>{this.state.name}</h3>
+        <a href={this.state.html_url}><h3>{this.state.name}</h3></a>
+        <p>Public Repos - {this.state.public_repos}</p>
         <hr/>
       </div>
     );
